@@ -132,6 +132,11 @@
         clear: left;
       }
     }
+
+    &:hover {
+      text-decoration: none;
+      border: 0;
+    }
   }
 
   .read-more {
