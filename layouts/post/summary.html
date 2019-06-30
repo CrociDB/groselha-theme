@@ -18,8 +18,10 @@
   </header>
   <!-- Content -->
   <div class="post-content">
-    <div class="post-summary">
-      {{ .Summary }}
+    <a class="post-summary" href="{{ .URL }}">
+      <img src="{{.Params.thumb}}" class="post-thumb"/>
+      <div class="post-summary-content">{{ .Summary | truncate 340 }}</div>
+      <div class="clearfix"></div>
     </div>
     <div class="read-more">
       <a href="{{ .URL }}" class="read-more-link">{{ T "readMore" }}</a>
